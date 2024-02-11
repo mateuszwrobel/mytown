@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://d0qlfufxnok3v"]
+
+[ext_resource type="PackedScene" uid="uid://bk4y6trd3ugkp" path="res://Player/player.tscn" id="1_mip8a"]
+[ext_resource type="PackedScene" uid="uid://dk62pdlw3sy64" path="res://Ground/ground.tscn" id="2_kp4pd"]
+
+[node name="World" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_mip8a")]
+light_mask = 4
+visibility_layer = 4
+position = Vector2(99, 527)
+collision_layer = 2
+collision_mask = 2
+
+[node name="Ground" parent="." instance=ExtResource("2_kp4pd")]
+position = Vector2(573, 621)
+collision_layer = 2
+collision_mask = 2
